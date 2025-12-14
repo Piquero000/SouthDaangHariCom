@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="min-h-screen flex items-center justify-center p-6">
+    <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
+      <h2 class="text-2xl font-bold mb-4">Admin Login</h2>
+      <form id="adminLoginForm" class="space-y-4">
+        <div>
+          <label class="block font-semibold">Username</label>
+          <input name="username" type="text" required class="w-full mt-2 p-3 border rounded" />
+        </div>
+        <div>
+          <label class="block font-semibold">Password</label>
+          <input name="password" type="password" required class="w-full mt-2 p-3 border rounded" />
+        </div>
+        <div class="flex gap-3">
+          <button type="submit" class="btn-primary">Login</button>
+          <a href="../index.html" class="btn-secondary" style="display:inline-flex;align-items:center;padding:10px 12px;">Back</a>
+        </div>
+      </form>
+      <p class="muted text-sm mt-4">If no admin exists, a default admin will be created (username: <strong>admin</strong>, password: <strong>admin123</strong>).</p>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>
